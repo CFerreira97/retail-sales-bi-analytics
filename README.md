@@ -18,7 +18,7 @@ assets/
 │   ├── 05_operations_discounts.png
 │   └── 06_operations_promotions.png
 └── gifs/
-    ├── year_filter_demo.gif
+    ├── map_filter_demo.gif
     ├── category_filter_demo.gif
     ├── customer_toggle_demo.gif
     └── info_bookmark_demo.gif
@@ -88,12 +88,11 @@ Split across two pages, this section analyses discount strategy and temporal dem
 
 ## Interactive Features
 
-### Year & Store Filters
-Each page includes button-style slicers for year (2023/ 2024/ 2025) and store location. Selecting different combinations updates all KPIs, charts and the map simultaneously.
+### Map — Revenue by Location
+Each page includes button-style slicers for year (2023/ 2024/ 2025) and store location.
+On the Market & Location page, changing the year also resizes the store bubbles on the map based on total revenue, making geographic performance shifts immediately visible.
 
-![Year and Store Filter Demo](assets/gifs/year_filter_demo.gif)
-
----
+![Map Filter Demo](assets/gifs/map_filter_demo.gif)
 
 ### Category Filter
 The Product & Pricing page includes a category slicer for Electronics, Fashion and Groceries. 
@@ -125,7 +124,7 @@ Built as a **star schema** in Microsoft Fabric with the Transactions table as th
 
 | Measure | Purpose |
 |---------|---------|
-| `Total Revenue` | Core revenue metric: quantity × unit price × (1 − discount) |
+| `Total Revenue` | Core revenue metric: quantity × unit price × (1 - discount) |
 | `Total Profit` | Revenue minus total cost of goods sold |
 | `Profit Margin` | Profit as a percentage of revenue |
 | `Average Order Value (AOV)` | Revenue ÷ total transactions |
@@ -141,9 +140,9 @@ Built as a **star schema** in Microsoft Fabric with the Transactions table as th
 
 ## Technical Stack
 
-- **Microsoft Fabric** — Lakehouse for data storage and transformation
-- **Power BI** — Semantic model and interactive reports
-- **DAX** — All business logic and KPIs defined as measures in the semantic layer
+- **Microsoft Fabric** - Lakehouse for data storage and transformation
+- **Power BI** - Semantic model and interactive reports
+- **DAX** - All business logic and KPIs defined as measures in the semantic layer
 
 ---
 
@@ -156,4 +155,4 @@ Built as a **star schema** in Microsoft Fabric with the Transactions table as th
 | 20241137 | Gonçalo Bento |
 | 20241598 | Sofia Salvado |
 
-*Nova IMS — Analyzing and Visualizing Data, January 2026*
+*Nova IMS - Analyzing and Visualizing Data, January 2026*
