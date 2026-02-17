@@ -89,7 +89,7 @@ Split across two pages, this section analyses discount strategy and temporal dem
 ## Interactive Features
 
 ### Map - Revenue by Location
-Each page includes button-style slicers for year (2023/ 2024/ 2025) and store location.
+Each page includes button-style year slicers for easy filtering. 
 On the Market & Location page, changing the year also resizes the store bubbles on the map based on total revenue, making geographic performance shifts immediately visible.
 
 ![Map Filter Demo](assets/gifs/map_filter_demo.gif)
