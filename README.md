@@ -19,7 +19,7 @@ assets/
 │   └── 06_operations_promotions.png
 └── gifs/
     ├── year_filter_demo.gif
-    ├── drilldown_demo.gif
+    ├── category_filter_demo.gif
     ├── customer_toggle_demo.gif
     └── info_bookmark_demo.gif
 ```
@@ -95,10 +95,11 @@ Each page includes button-style slicers for year (2023/ 2024/ 2025) and store lo
 
 ---
 
-### Drill-Down Hierarchies
-Three drill-down hierarchies are built into the semantic model - Date (Year → Quarter → Month → Day), Product (Category → Subcategory → Product) and Store (Region → City → Store). Users can drill into any chart without leaving the page.
+### Category Filter
+The Product & Pricing page includes a category slicer for Electronics, Fashion and Groceries. 
+Selecting a category updates the KPI cards, the revenue/profit bar chart, the top products chart and the discount-level chart simultaneously.
 
-![Drill-Down Demo](assets/gifs/drilldown_demo.gif)
+![Category Filter Demo](assets/gifs/category_filter_demo.gif)
 
 ---
 
