@@ -1,6 +1,6 @@
 # Retail Sales Analytics — Power BI Dashboard
 
-> Business Intelligence solution built on **Microsoft Fabric** and **Power BI** for a regional retail chain operating 5 stores across 4 regions. Covers sales performance, customer behaviour, product profitability and operational efficiency across 2023–2025.
+> Business Intelligence solution built on **Microsoft Fabric** and **Power BI** for a regional retail chain operating 5 stores across 4 regions. Covers sales performance, customer behaviour, product profitability and operational efficiency across 2023 - 2025.
 
 👉 [View the interactive dashboard in Power BI](https://app.fabric.microsoft.com/reportEmbed?reportId=1d50a8d7-a80e-49f7-936f-82d41e82cff1&autoAuth=true&ctid=e4bd69ff-e6f7-4c2e-b247-41b54ba2490e)
 
@@ -40,7 +40,7 @@ assets/
 
 ## 1. Executive Overview
 
-Provides senior management with a high-level snapshot of financial health. Five KPI cards display **Total Revenue**, **Total Profit**, **Profit Margin**, **Revenue YTD** and **YoY Revenue Growth**. Two line charts below track revenue and profit month by month, with separate lines for 2023, 2024, and 2025, allowing direct year-over-year comparison of seasonal patterns and trend deviations.
+Provides senior management with a high-level snapshot of financial health. Five KPI cards display **Total Revenue**, **Total Profit**, **Profit Margin**, **Revenue YTD** and **YoY Revenue Growth**. Two line charts below track revenue and profit month by month, with separate lines for 2023, 2024 and 2025, allowing direct year-over-year comparison of seasonal patterns and trend deviations.
 
 ![Executive Overview](assets/dashboards/01_executive_overview.png)
 
@@ -48,7 +48,7 @@ Provides senior management with a high-level snapshot of financial health. Five 
 
 ## 2. Product & Pricing Performance
 
-Analyses which product categories and individual products contribute most to revenue, profit and sales volume, and evaluates how discounting affects profitability. Includes a **category revenue/profit bar chart**, a **top 10 products chart** combining units sold and revenue, and a **discount-level profitability chart** showing how margins shift across different discount tiers. Two page-level KPIs highlight the top category by revenue and profit.
+Analyses which product categories and individual products contribute most to revenue, profit and sales volume and evaluates how discounting affects profitability. Includes a **category revenue/profit bar chart**, a **top 10 products chart** combining units sold and revenue and a **discount-level profitability chart** showing how margins shift across different discount tiers. Two page-level KPIs highlight the top category by revenue and profit.
 
 ![Product & Pricing Performance](assets/dashboards/02_product_pricing.png)
 
@@ -56,7 +56,7 @@ Analyses which product categories and individual products contribute most to rev
 
 ## 3. Market & Location Performance
 
-Evaluates performance geographically across regions, stores, and customer cities. A **map visual** plots each store sized by total revenue. A **clustered column chart** compares revenue and profit by store and region. An **AOV chart** shows average order value per location, and a **customer city bar chart** identifies the top-contributing cities by revenue and profit.
+Evaluates performance geographically across regions, stores and customer cities. A **map visual** plots each store sized by total revenue. A **clustered column chart** compares revenue and profit by store and region. An **AOV chart** shows average order value per location and a **customer city bar chart** identifies the top-contributing cities by revenue and profit.
 
 > Note: The original dataset used fictional city names. A supplementary location table with real U.S. coordinates was created to enable the map visual.
 
@@ -66,7 +66,7 @@ Evaluates performance geographically across regions, stores, and customer cities
 
 ## 4. Customer & Demand Behaviour
 
-Examines when customers buy, how they pay, and which customers generate the most value. A **weekday activity chart** combines transaction count, unique customers, and revenue by day of week. A **top 10 customers bar chart** ranks customers by a composite revenue + profit score, with an interactive toggle to switch to a detailed table view. A **stacked column chart** shows transaction counts by payment method per city, and a **stacked area chart** tracks revenue by payment method over time.
+Examines when customers buy, how they pay, and which customers generate the most value. A **weekday activity chart** combines transaction count, unique customers and revenue by day of week. A **top 10 customers bar chart** ranks customers by a composite revenue + profit score, with an interactive toggle to switch to a detailed table view. A **stacked column chart** shows transaction counts by payment method per city and a **stacked area chart** tracks revenue by payment method over time.
 
 ![Customer & Demand Behaviour](assets/dashboards/04_customer_demand.png)
 
@@ -76,11 +76,11 @@ Examines when customers buy, how they pay, and which customers generate the most
 
 Split across two pages, this section analyses discount strategy and temporal demand patterns.
 
-**Page 1 — Discount Overview:** Three KPI cards show Discounted Revenue, Non-Discounted Revenue, and Discounted Revenue Share (%). A **donut chart** visualises the revenue split, and a **dual-line chart** tracks both revenue streams month by month.
+**Page 1 — Discount Overview:** Three KPI cards show Discounted Revenue, Non-Discounted Revenue and Discounted Revenue Share (%). A **donut chart** visualises the revenue split and a **dual-line chart** tracks both revenue streams month by month.
 
 ![Operations — Discounts](assets/dashboards/05_operations_discounts.png)
 
-**Page 2 — Discount Performance & Demand Patterns:** A **scatter chart** plots each discount level by total quantity sold vs. profit margin (bubble size = revenue), revealing the volume-profitability trade-off. A **line and column chart** compares quantity and revenue across discount tiers. A **weekly demand chart** shows revenue and average order value by weekday, and a **monthly area chart** reveals seasonal sales patterns.
+**Page 2 — Discount Performance & Demand Patterns:** A **scatter chart** plots each discount level by total quantity sold vs. profit margin (bubble size = revenue), revealing the volume-profitability trade-off. A **line and column chart** compares quantity and revenue across discount tiers. A **weekly demand chart** shows revenue and average order value by weekday and a **monthly area chart** reveals seasonal sales patterns.
 
 ![Operations — Promotions](assets/dashboards/06_operations_promotions.png)
 
@@ -89,21 +89,21 @@ Split across two pages, this section analyses discount strategy and temporal dem
 ## Interactive Features
 
 ### Year & Store Filters
-Each page includes button-style slicers for year (2023 / 2024 / 2025) and store location. Selecting different combinations updates all KPIs, charts, and the map simultaneously.
+Each page includes button-style slicers for year (2023/ 2024/ 2025) and store location. Selecting different combinations updates all KPIs, charts and the map simultaneously.
 
 ![Year and Store Filter Demo](assets/gifs/year_filter_demo.gif)
 
 ---
 
 ### Drill-Down Hierarchies
-Three drill-down hierarchies are built into the semantic model — Date (Year → Quarter → Month → Day), Product (Category → Subcategory → Product), and Store (Region → City → Store). Users can drill into any chart without leaving the page.
+Three drill-down hierarchies are built into the semantic model - Date (Year → Quarter → Month → Day), Product (Category → Subcategory → Product) and Store (Region → City → Store). Users can drill into any chart without leaving the page.
 
 ![Drill-Down Demo](assets/gifs/drilldown_demo.gif)
 
 ---
 
 ### Customer Table Toggle
-The Top 10 Customers visual on the Customer & Demand page includes an interactive toggle that switches between a bar chart view and a detailed table showing Customer ID, tenure in years, and total revenue.
+The Top 10 Customers visual on the Customer & Demand page includes an interactive toggle that switches between a bar chart view and a detailed table showing Customer ID, tenure in years and total revenue.
 
 ![Customer Toggle Demo](assets/gifs/customer_toggle_demo.gif)
 
