@@ -118,7 +118,7 @@ Each page title includes an info icon. Clicking it triggers a bookmark that over
 
 ## Semantic Model
 
-Built as a **star schema** in Microsoft Fabric with the Transactions table as the fact table and four dimension tables: Customers, Products, Stores, and a custom Date dimension spanning 2020–2025.
+Built as a **star schema** in Microsoft Fabric with the Transactions table as the fact table and four dimension tables: Customers, Products, Stores, and a custom Date dimension spanning 2020-2025.
 
 **15 DAX measures** were developed, including:
 
