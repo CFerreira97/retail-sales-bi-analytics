@@ -1,4 +1,4 @@
-# Retail Sales Analytics — Power BI Dashboard
+# Retail Sales Analytics - Power BI Dashboard
 
 > Business Intelligence solution built on **Microsoft Fabric** and **Power BI** for a regional retail chain operating 5 stores across 4 regions. Covers sales performance, customer behaviour, product profitability and operational efficiency across 2023 - 2025.
 
