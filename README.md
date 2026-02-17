@@ -103,14 +103,14 @@ Selecting a category updates the KPI cards, the revenue/profit bar chart, the to
 ---
 
 ### Customer Table Toggle
-The Top 10 Customers visual on the Customer & Demand page includes an interactive toggle that switches between a bar chart view and a detailed table showing Customer ID, tenure in years and total revenue.
+The Top 10 Customers visual on the Customer & Demand page includes an interactive toggle that switches between a bar chart view and a detailed table showing Customer ID, first name, tenure in years, total revenue and total profit.
 
 ![Customer Toggle Demo](assets/gifs/customer_toggle_demo.gif)
 
 ---
 
 ### Page Info Bookmarks
-Each page title includes an info icon (ℹ️). Clicking it triggers a bookmark that overlays a brief description of the page's purpose and analytical focus, then dismisses on click.
+Each page title includes an info icon. Clicking it triggers a bookmark that overlays a brief description of the page's purpose and analytical focus, then dismisses on click.
 
 ![Info Bookmark Demo](assets/gifs/info_bookmark_demo.gif)
 
